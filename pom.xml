@@ -53,20 +53,5 @@
             <artifactId>fileutil-file-util</artifactId>
             <version>1.0.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.hmtmcse.fileutil</groupId>
-            <artifactId>fileutil-file-util</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.hmtmcse.fileutil</groupId>
-            <artifactId>fileutil-file-util</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.hmtmcse.fileutil</groupId>
-            <artifactId>fileutil-file-util</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
 </project>
