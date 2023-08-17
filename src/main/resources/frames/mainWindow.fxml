@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panelFondo" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #3D4956; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+    <children>
+        <Pane prefHeight="500.0" style="-fx-background-color: #ff9933; -fx-border-style: solid;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imgSystem/mando.png" />
+                    </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </ImageView>
+                <Text layoutX="18.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 24px; -fx-text-alignment: center; -fx-font-style: Italic; -fx-font-weight: bold;" text="Command Runner FX" underline="true" wrappingWidth="120.99999785423279">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.11428571428571427">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow />
+               </effect></Text>
+            </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Pane>
+        <Label layoutX="197.0" layoutY="32.0" prefHeight="60.0" prefWidth="307.0" text="SELECCIONE OPCIÓN" textFill="WHITE" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="30.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Label>
+        <Button fx:id="buttonOpcionSistemas" layoutX="203.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonSistemas" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #0cbccc; -fx-background-radius: 13px; -fx-border-style: solid; -fx-border-width: 2px; -fx-border-radius: 13px; -fx-border-insets: -1;">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imgSystem/sistemas.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Button fx:id="buttonOpcionRedes" layoutX="203.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonRedes" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #107acc; -fx-background-radius: 13px; -fx-border-style: solid; -fx-border-width: 2px; -fx-border-radius: 13px; -fx-border-insets: -1;">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imgSystem/redes.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Label layoutX="319.0" layoutY="271.0" prefHeight="35.0" prefWidth="176.0" text="Ejecutar Comandos Redes" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+        <Label layoutX="319.0" layoutY="144.0" prefHeight="35.0" prefWidth="360.0" text="Comprobar y Reparar Ficheros e Imagen de Windows" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Button fx:id="buttonOpcionUpdateTemporales" layoutX="203.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonUpdateTemp" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #0c58a3; -fx-background-radius: 13px; -fx-border-style: solid; -fx-border-width: 2px; -fx-border-radius: 13px; -fx-border-insets: -1;">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgUpdateTemp/updateTemp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="319.0" layoutY="401.0" prefHeight="35.0" prefWidth="367.0" text="Reparar Windows Update y Eliminar Archivos Temporales" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Button fx:id="buttonCredits" layoutX="666.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonCreditos" prefHeight="36.0" prefWidth="32.0" style="-fx-background-color: rgb(255,255,255); -fx-background-radius: 5px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgSystem/iconCredits.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="714.0" layoutY="464.0" prefHeight="19.0" prefWidth="59.0" text="Creditos" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="391.0" layoutY="474.0" prefHeight="19.0" prefWidth="140.0" text="By Abraham Mellado Domene" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

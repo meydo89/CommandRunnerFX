@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WindowNetworksController">
+   <children>
+      <Pane layoutY="2.0" prefHeight="500.0" style="-fx-background-color: #107acc; -fx-border-style: solid;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgSystem/mando.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Text layoutX="18.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 24px; -fx-text-alignment: center; -fx-font-style: Italic; -fx-font-weight: bold;" text="Command Runner FX" underline="true" wrappingWidth="120.99999785423279">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow />
+               </effect></Text>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <Button fx:id="botonRealizarPing" layoutX="205.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonRealizarPing" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(50,100,255); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fx:id="PulsarRealizarPing" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/realizarPing.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Ping (PING)" wrappingWidth="101.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Button fx:id="botonRealizarTracert" layoutX="205.0" layoutY="160.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonRealizarTracert" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(30,14,255); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/realizarTracert.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizar Seguimiento de Saltos a una IP (TRACERT)" wrappingWidth="271.13672494888306">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Label layoutX="209.0" layoutY="14.0" prefHeight="64.0" prefWidth="580.0" text="COMANDOS REDES" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ver mi Configuración de Red (IPCONFIG /ALL)" wrappingWidth="215.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolucion de Nombres DNS (NSLOOKUP)" wrappingWidth="185.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mostrar Conexiones de Red Acitvas en el Sistema (NETSTAT)" wrappingWidth="369.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Button fx:id="botonRealizarIpConfig" layoutX="205.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonVerMiConfiRed" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(0,128,128); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/verMiIp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="botonRealizarNslookup" layoutX="205.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonRealizarNslookup" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(65,105,225); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/resolucionDns.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="botonRealizarNetstat" layoutX="205.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonRealizarNetstat" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(0,128,255); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/supervisarRed.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="botonReestablecerAdaptadorRed" layoutX="205.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#pulsarBotonReestablecerAdaptadorRed" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: rgb(0,128,255); -fx-border-style: solid; -fx-border-insets: -1px;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgNetworks/reestablecerAdaptador.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text fill="#fcf9f9" layoutX="277.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restablecer Valores del Adaptador de Red (NETSH)" wrappingWidth="271.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+   </children>
+</AnchorPane>

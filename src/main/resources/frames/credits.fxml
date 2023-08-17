@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreditsController">
+    <children>
+        <AnchorPane fx:id="panelFondo" prefHeight="510.0" prefWidth="810.0"
+                    style="-fx-background-color: #3D4956; -fx-border-style: solid;">
+            <children>
+                <Pane layoutX="-6.0" prefHeight="500.0" prefWidth="163.0"
+                      style="-fx-background-color: rgb(255,255,255); -fx-border-style: solid;"
+                      AnchorPane.bottomAnchor="1.0" AnchorPane.topAnchor="-1.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="5.0" layoutY="64.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../imgSystem/mando.png"/>
+                            </image>
+                            <effect>
+                                <DropShadow/>
+                            </effect>
+                        </ImageView>
+                        <Text layoutX="18.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              style="-fx-font-size: 24px; -fx-text-alignment: center; -fx-font-style: Italic; -fx-font-weight: bold;"
+                              text="Command Runner FX" underline="true" wrappingWidth="120.99999785423279">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0" startY="0.11428571428571427">
+                                    <stops>
+                                        <Stop color="BLACK"/>
+                                        <Stop color="WHITE" offset="1.0"/>
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                            <effect>
+                                <DropShadow/>
+                            </effect>
+                        </Text>
+                    </children>
+                </Pane>
+                <Label layoutX="197.0" layoutY="14.0" prefHeight="64.0" prefWidth="606.0"
+                       text="AGRADECIMIENTOS A LOS AUTORES DE FLATICON" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="84.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Kalashnyk from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="79.0" prefHeight="35.0" prefWidth="220.0"
+                       text="Icon made by Nikita Golubev from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="102.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by ultimatearm from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="200.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by juicy_fish from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="176.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Freepik from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="176.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by surang from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="200.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by phatplus from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="224.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Aranagraphics from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="224.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by sbhgraphics from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="102.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Flat Icons from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="270.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Freepik from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="270.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by kerismaker from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="294.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Freepik from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="294.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Eucalyp from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="318.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Eucalyp from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="379.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Freepik from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="454.0" layoutY="379.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Futuer from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="458.0" layoutY="318.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by kerismaker from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Text fill="WHITE" layoutX="373.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Ventana Pricipal" underline="true" wrappingWidth="100.13671875">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Text>
+                <Text fill="WHITE" layoutX="373.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Ventana Sistemas" underline="true" wrappingWidth="100.13671904057264">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Text>
+                <Text fill="WHITE" layoutX="373.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Ventana Redes" underline="true" wrappingWidth="100.13671904057264">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Text>
+                <Text fill="WHITE" layoutX="289.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Ventana Actualizacion y Eliminar Temporales" underline="true"
+                      wrappingWidth="268.13671904057264">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Text>
+                <Label layoutX="454.0" layoutY="403.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Flat Icons from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="403.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Isared Honghin from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="427.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Freepik from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="454.0" layoutY="427.0" prefHeight="24.0" prefWidth="207.0"
+                       text="Icon made by Vectorslab from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+                <Label layoutX="197.0" layoutY="126.0" prefHeight="17.0" prefWidth="194.0"
+                       text="Icon made by Rashad from www.flaticon.com" textFill="WHITE">
+                    <font>
+                        <Font size="9.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </AnchorPane>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text"/>
+    </children>
+</AnchorPane>
