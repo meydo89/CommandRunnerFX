@@ -1,6 +1,7 @@
 package controller;
 
 import builds.PathSystemCommands;
+import effects.ReducingEffect;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -42,13 +43,13 @@ public class WindowSystemController {
 
     @FXML
     private void initialize() {
-        addReducingEffect(botonEstadoFicherosWin);
-        addReducingEffect(botonRepararFicherosWin);
-        addReducingEffect(botonRepararFicherosWin);
-        addReducingEffect(botonComprobarImgWin);
-        addReducingEffect(botonRepararImgWin);
-        addReducingEffect(botonRepararEstructuraWin);
-        addReducingEffect(botonInformacionSistema);
+       ReducingEffect.addReducingEffect(botonEstadoFicherosWin);
+       ReducingEffect.addReducingEffect(botonRepararFicherosWin);
+       ReducingEffect.addReducingEffect(botonRepararFicherosWin);
+       ReducingEffect.addReducingEffect(botonComprobarImgWin);
+       ReducingEffect.addReducingEffect(botonRepararImgWin);
+       ReducingEffect.addReducingEffect(botonRepararEstructuraWin);
+       ReducingEffect.addReducingEffect(botonInformacionSistema);
     }
 
     @FXML
@@ -75,29 +76,4 @@ public class WindowSystemController {
         PathSystemCommands informacionSistema = new PathSystemCommands();
         informacionSistema.ejecutarComandosInformacionSistema();
     }
-
-    private void addReducingEffect(Button button) {
-
-
-        ScaleTransition scaleDownTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleDownTransition.setToX(0.8);
-        scaleDownTransition.setToY(0.8);
-
-        ScaleTransition scaleUpTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleUpTransition.setToX(1.0);
-        scaleUpTransition.setToY(1.0);
-
-        button.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
-            scaleDownTransition.playFromStart();
-            event.consume();
-        });
-
-        button.addEventHandler(MouseEvent.MOUSE_RELEASED, event -> {
-            scaleDownTransition.stop();
-            scaleUpTransition.playFromStart();
-            event.consume();
-        });
-    }
-
-
 }

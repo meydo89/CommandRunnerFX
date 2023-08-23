@@ -1,5 +1,6 @@
 package controller;
 
+import effects.ReducingEffect;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -28,34 +29,11 @@ public class MainWindowController {
 
     @FXML
     private void initialize() {
-
-        addReducingEffect(buttonOpcionSistemas);
-        addReducingEffect(buttonOpcionRedes);
-        addReducingEffect(buttonOpcionUpdateTemporales);
-        addReducingEffect(buttonCredits);
-    }
-
-    private void addReducingEffect(Button button) {
-
-
-        ScaleTransition scaleDownTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleDownTransition.setToX(0.8);
-        scaleDownTransition.setToY(0.8);
-
-        ScaleTransition scaleUpTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleUpTransition.setToX(1.0);
-        scaleUpTransition.setToY(1.0);
-
-        button.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
-            scaleDownTransition.playFromStart();
-            event.consume();
-        });
-
-        button.addEventHandler(MouseEvent.MOUSE_RELEASED, event -> {
-            scaleDownTransition.stop();
-            scaleUpTransition.playFromStart();
-            event.consume();
-        });
+        ReducingEffect.addReducingEffect(buttonOpcionSistemas);
+        ReducingEffect.addReducingEffect(buttonOpcionRedes);
+        ReducingEffect.addReducingEffect(buttonOpcionUpdateTemporales);
+        ReducingEffect.addReducingEffect(buttonOpcionUpdateTemporales);
+        ReducingEffect.addReducingEffect(buttonCredits);
     }
 
     @FXML
@@ -72,7 +50,6 @@ public class MainWindowController {
         stage.setResizable(false);
         stage.show();
     }
-
 
     @FXML
     public void pulsarBotonRedes(MouseEvent event) throws IOException {

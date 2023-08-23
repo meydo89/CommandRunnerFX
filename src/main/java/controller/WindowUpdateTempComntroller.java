@@ -1,6 +1,7 @@
 package controller;
 
 import builds.PathUpdateTempCommands;
+import effects.ReducingEffect;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -59,38 +60,11 @@ public class WindowUpdateTempComntroller {
     }
 
     public void initialize(){
-        addReducingEffect(botonRestablecerWinUpdate);
-        addReducingEffect(botonEliminarTempUsuario);
-        addReducingEffect(botonEliminarTempSistema);
-        addReducingEffect(botonEliminarTempInternet);
-        addReducingEffect(botonEliminarTempAplicaciones);
-        addReducingEffect(botonEliminarActualizacionesWindows);
-
-
+     ReducingEffect.addReducingEffect(botonRestablecerWinUpdate);
+     ReducingEffect.addReducingEffect(botonEliminarTempUsuario);
+     ReducingEffect.addReducingEffect(botonEliminarTempSistema);
+     ReducingEffect.addReducingEffect(botonEliminarTempInternet);
+     ReducingEffect.addReducingEffect(botonEliminarTempAplicaciones);
+     ReducingEffect.addReducingEffect(botonEliminarActualizacionesWindows);
     }
-
-    private void addReducingEffect(javafx.scene.control.Button button) {
-
-
-        ScaleTransition scaleDownTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleDownTransition.setToX(0.8);
-        scaleDownTransition.setToY(0.8);
-
-        ScaleTransition scaleUpTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleUpTransition.setToX(1.0);
-        scaleUpTransition.setToY(1.0);
-
-        button.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_PRESSED, event -> {
-            scaleDownTransition.playFromStart();
-            event.consume();
-        });
-
-        button.addEventHandler(javafx.scene.input.MouseEvent.MOUSE_RELEASED, event -> {
-            scaleDownTransition.stop();
-            scaleUpTransition.playFromStart();
-            event.consume();
-        });
-    }
-
-
 }

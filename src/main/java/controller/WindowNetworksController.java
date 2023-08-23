@@ -1,6 +1,7 @@
 package controller;
 
 import builds.PathNetWorksCommands;
+import effects.ReducingEffect;
 import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -59,33 +60,11 @@ public class WindowNetworksController {
     }
     @FXML
     private void initialize() {
-        addReducingEffect(botonRealizarPing);
-        addReducingEffect(botonRealizarTracert);
-        addReducingEffect(botonRealizarNslookup);
-        addReducingEffect(botonRealizarNetstat);
-        addReducingEffect(botonReestablecerAdaptadorRed);
-        addReducingEffect(botonRealizarIpConfig);
-    }
-
-    private void addReducingEffect(Button button) {
-
-        ScaleTransition scaleDownTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleDownTransition.setToX(0.8);
-        scaleDownTransition.setToY(0.8);
-
-        ScaleTransition scaleUpTransition = new ScaleTransition(Duration.millis(200), button);
-        scaleUpTransition.setToX(1.0);
-        scaleUpTransition.setToY(1.0);
-
-        button.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
-            scaleDownTransition.playFromStart();
-            event.consume();
-        });
-
-        button.addEventHandler(MouseEvent.MOUSE_RELEASED, event -> {
-            scaleDownTransition.stop();
-            scaleUpTransition.playFromStart();
-            event.consume();
-        });
+       ReducingEffect.addReducingEffect(botonRealizarPing);
+       ReducingEffect.addReducingEffect(botonRealizarTracert);
+       ReducingEffect.addReducingEffect(botonRealizarNslookup);
+       ReducingEffect.addReducingEffect(botonRealizarNetstat);
+       ReducingEffect.addReducingEffect(botonReestablecerAdaptadorRed);
+       ReducingEffect.addReducingEffect(botonRealizarIpConfig);
     }
 }
