@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class CommandRunnerFX {
     public static void main(String[] args) {
         WindowMainLauncher.main(args);
 
